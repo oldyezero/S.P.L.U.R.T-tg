@@ -104,6 +104,10 @@
 	name = "Gas Mix Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/mix_tank
 
+/obj/item/circuitboard/computer/atmos_control/mix_tank2
+	name = "Second Gas Mix Supply Control"
+	build_path = /obj/machinery/computer/atmos_control/mix_tank2
+
 /obj/item/circuitboard/computer/atmos_control/nitrous_tank
 	name = "Nitrous Oxide Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/nitrous_tank
