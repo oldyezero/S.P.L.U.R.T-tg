@@ -23,6 +23,10 @@
 /area/station/engineering/atmos/upper
 	name = "Upper Atmospherics"
 
+/area/station/engineering/atmos/atmos2
+	name = "Second Atmospherics"
+	icon_state = "second_atmos"
+
 /*outside atmos*/
 /area/station/engineering/atmos/space_catwalk
 	name = "\improper Atmospherics Space Catwalk"

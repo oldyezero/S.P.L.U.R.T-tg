@@ -113,6 +113,11 @@
 	circuit = /obj/item/circuitboard/computer/atmos_control/mix_tank
 	atmos_chambers = list(ATMOS_GAS_MONITOR_MIX = "Mix Chamber")
 
+/obj/machinery/computer/atmos_control/mix_tank2
+	name = "Second Mix Chamber Control"
+	circuit = /obj/item/circuitboard/computer/atmos_control/mix_tank2
+	atmos_chambers = list(ATMOS_GAS_MONITOR_MIX2 = "Second Mix Chamber")
+
 /obj/machinery/computer/atmos_control/nocontrol/incinerator
 	name = "Incinerator Chamber Monitor"
 	circuit = /obj/item/circuitboard/computer/atmos_control/nocontrol/incinerator

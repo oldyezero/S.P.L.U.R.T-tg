@@ -14,6 +14,10 @@
 	name = "mix tank gas sensor"
 	chamber_id = ATMOS_GAS_MONITOR_MIX
 
+/obj/machinery/air_sensor/mix_tank2
+	name = "second mix tank gas sensor"
+	chamber_id = ATMOS_GAS_MONITOR_MIX2
+
 /obj/machinery/air_sensor/nitrous_tank
 	name = "nitrous oxide tank gas sensor"
 	chamber_id = ATMOS_GAS_MONITOR_N2O
