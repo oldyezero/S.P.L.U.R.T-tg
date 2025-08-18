@@ -1,0 +1,44 @@
+"a" = (/obj/machinery/door/airlock{name = "Unit B"},/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"b" = (/obj/item/clothing/sextoy/fleshlight{icon_state = "fleshlight_red"; current_color = "red"; name = "Umbreon plush"; desc = "It has a VERY clear onahole on it."},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"c" = (/obj/machinery/light/floor,/obj/item/clothing/sextoy/fleshlight{current_color = "teal"; name = "Vaporeon plush"; desc = "It has a VERY clear onahole on it."; icon_state = "fleshlight_teal"},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"e" = (/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{dir = 1},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"f" = (/obj/structure/extinguisher_cabinet/directional/east,/obj/structure/mirror/directional/east,/obj/structure/sink/directional/west,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"i" = (/obj/machinery/light/floor,/obj/item/clothing/sextoy/fleshlight{current_color = "green"; name = "Leafeon plush"; desc = "It has a VERY clear onahole on it."; icon_state = "fleshlight_green"},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"j" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"k" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{dir = 4},/obj/item/clothing/sextoy/fleshlight{name = "Sylveon plush"; desc = "Most of its soft silicon ribbons look like they're wrapped around an invisible cylinder."},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"l" = (/obj/structure/toilet{dir = 4},/obj/machinery/light/small/directional/east,/obj/machinery/newscaster/directional/east,/obj/effect/landmark/start/assistant,/obj/effect/landmark/start/hangover,/obj/machinery/button/door/directional/south{id = "Toilet4"; name = "Lock Control"; normaldoorcontrol = 1; specialfunctions = 4},/obj/effect/spawner/random/trash/graffiti{pixel_y = -32; spawn_loot_chance = 50},/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"m" = (/obj/machinery/airalarm/directional/east,/obj/machinery/newscaster/directional/north,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"n" = (/obj/machinery/door/airlock/maintenance,/obj/structure/cable,/obj/machinery/duct,/obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,/obj/effect/mapping_helpers/airlock/unres{dir = 1},/turf/open/floor/plating,/area/station/maintenance/fore)
+"q" = (/obj/structure/urinal/directional/north,/obj/effect/landmark/start/hangover,/obj/machinery/duct,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"s" = (/obj/structure/sign/poster/official/random/directional/south,/obj/machinery/light/small/directional/south,/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{dir = 1},/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"u" = (/obj/machinery/duct,/obj/structure/cable,/obj/machinery/light/floor,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"w" = (/turf/closed/wall,/area/station/maintenance/fore)
+"x" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/duct,/obj/structure/cable,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"y" = (/obj/structure/cable,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/duct,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"z" = (/obj/machinery/duct,/obj/structure/cable,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"A" = (/obj/item/clothing/sextoy/fleshlight{icon_state = "fleshlight_yellow"; current_color = "yellow"; name = "Glaceon plush"; desc = "It feels slightly cold to the touch"},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"B" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"D" = (/obj/structure/sink/directional/east,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"E" = (/obj/structure/cable,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/effect/landmark/start/hangover,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"F" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/duct,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"G" = (/obj/machinery/door/airlock{name = "Eevee Brothel"},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"H" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock{name = "Eevee Brothel"},/obj/structure/cable,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"I" = (/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"J" = (/obj/machinery/door/airlock{id_tag = "Toilet4"; name = "Unit 4"},/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"M" = (/obj/structure/cable,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/power/apc/auto_name/directional/south,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/duct,/obj/machinery/door/airlock{name = "Eevee Brothel"},/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"P" = (/obj/machinery/door/airlock{name = "Unisex Showers"},/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/duct,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"R" = (/obj/machinery/light/floor,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"U" = (/turf/closed/wall,/area/station/commons/toilet/restrooms)
+"V" = (/obj/structure/cable,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+"X" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/open/floor/iron/white,/area/station/commons/toilet/restrooms)
+"Z" = (/obj/machinery/recharge_station,/obj/effect/landmark/start/hangover,/obj/effect/spawner/random/trash/graffiti{pixel_y = -32; spawn_loot_chance = 50},/obj/machinery/light/small/directional/west,/turf/open/floor/iron/freezer,/area/station/commons/toilet/restrooms)
+
+(1,1,1) = {"
+wwwnwwUPUU
+wiIzuUqFmU
+wkBjxMyVEH
+wbIXIUDsfU
+wAIeIUJUaU
+wcIIRUlUZU
+wUUGGUUUUU
+"}

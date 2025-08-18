@@ -11,8 +11,15 @@
 /turf/closed/indestructible/steel,
 /area/misc/hilbertshotel)
 "aS" = (
-/obj/structure/foamedmetal,
+/obj/item/dog_bone,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/kitchen,
+/area/misc/hilbertshotel)
+"bl" = (
+/obj/structure/table,
+/obj/item/food/canned/peaches/maint,
+/obj/item/food/canned/peaches/maint,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "bw" = (
 /obj/machinery/light_switch/directional/north,
@@ -55,6 +62,25 @@
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
+/area/misc/hilbertshotel)
+"cR" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
+"cS" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/effect/spawner/liquids_spawner/puddle{
+	reagent_list = list(/datum/reagent/blood = 10);
+	name = "Liquids Spawner (Blood, Puddle)"
+	},
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "dw" = (
 /obj/item/kitchen/spoon,
@@ -121,6 +147,11 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron/kitchen,
 /area/misc/hilbertshotel)
+"gx" = (
+/obj/item/trash/can/food/peaches/maint,
+/obj/item/trash/can/food/peaches/maint,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "gQ" = (
 /obj/structure/chair/sofa/corp/corner,
 /obj/machinery/light/warm/directional/east,
@@ -131,6 +162,10 @@
 /turf/open/floor/iron/pool/cobble/corner{
 	dir = 4
 	},
+/area/misc/hilbertshotel)
+"hv" = (
+/obj/machinery/light/small/red/directional/east,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "ik" = (
 /obj/structure/closet/secure_closet/wall{
@@ -164,6 +199,12 @@
 "jT" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron/kitchen,
+/area/misc/hilbertshotel)
+"ka" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "kh" = (
 /obj/structure/mirror/directional/north,
@@ -204,6 +245,19 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/misc/hilbertshotel)
+"mB" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "rinroom"
+	},
+/turf/open/floor/iron/stairs/medium{
+	dir = 1
+	},
+/area/misc/hilbertshotel)
+"oD" = (
+/obj/structure/table,
+/obj/item/stack/shibari_rope/full,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "oZ" = (
 /turf/closed/indestructible/steel,
 /area/misc/hilbertshotel)
@@ -220,6 +274,12 @@
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/carpet/royalblue,
 /area/misc/hilbertshotel)
+"pO" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "st" = (
 /obj/machinery/door/morgue,
 /turf/open/floor/wood/parquet,
@@ -233,6 +293,12 @@
 	dir = 8
 	},
 /turf/open/floor/carpet,
+/area/misc/hilbertshotel)
+"vi" = (
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/turf/open/floor/iron/kitchen,
 /area/misc/hilbertshotel)
 "wb" = (
 /obj/structure/closet/cabinet,
@@ -269,6 +335,14 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/misc/hilbertshotel)
+"zR" = (
+/obj/machinery/telecomms/relay/preset/auto,
+/turf/open/floor/catwalk_floor,
+/area/misc/hilbertshotel)
+"zT" = (
+/obj/structure/falsewall,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "zY" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood,
@@ -285,6 +359,10 @@
 	},
 /turf/open/floor/wood/tile,
 /area/misc/hilbertshotel)
+"Bq" = (
+/obj/machinery/door/morgue,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "BR" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -294,6 +372,11 @@
 "Dc" = (
 /obj/item/kirbyplants/random,
 /obj/structure/sign/poster/random/directional/north,
+/obj/machinery/button/door/directional/north{
+	id = "rinroom";
+	name = "...";
+	req_access = list("atmospherics")
+	},
 /turf/open/floor/iron/kitchen,
 /area/misc/hilbertshotel)
 "DR" = (
@@ -306,14 +389,16 @@
 /turf/open/floor/wood/tile,
 /area/misc/hilbertshotel)
 "DX" = (
-/obj/machinery/computer{
-	dir = 8
-	},
+/obj/structure/table/wood,
 /turf/open/floor/carpet/donk,
 /area/misc/hilbertshotel)
 "Ea" = (
 /obj/structure/chair/stool/bar/directional/north,
 /turf/open/floor/wood/tile,
+/area/misc/hilbertshotel)
+"Ee" = (
+/obj/item/reagent_containers/cup/bucket,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "EX" = (
 /obj/structure/table,
@@ -372,6 +457,10 @@
 	},
 /turf/open/floor/wood/tile,
 /area/misc/hilbertshotel)
+"Lo" = (
+/obj/structure/railing/corner,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "LC" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -396,15 +485,45 @@
 /turf/open/floor/iron/freezer,
 /area/misc/hilbertshotel)
 "Mp" = (
-/obj/structure/bed/dogbed,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
+	},
+/obj/structure/bed/dogbed{
+	name = "Claire's bed"
 	},
 /turf/open/floor/wood/parquet,
 /area/misc/hilbertshotel)
 "MO" = (
 /obj/structure/chair{
 	dir = 8
+	},
+/turf/open/floor/iron/kitchen,
+/area/misc/hilbertshotel)
+"Nm" = (
+/obj/machinery/light/small/red/directional/west,
+/obj/structure/table,
+/obj/item/shears,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
+"ND" = (
+/obj/structure/fluff/fake_camera{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
+"NH" = (
+/turf/open/floor/catwalk_floor,
+/area/misc/hilbertshotel)
+"NL" = (
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
+"Oc" = (
+/obj/structure/bed/dogbed{
+	name = "Carper's bed"
+	},
+/mob/living/basic/carp/pet{
+	name = "Carper"
 	},
 /turf/open/floor/iron/kitchen,
 /area/misc/hilbertshotel)
@@ -429,6 +548,12 @@
 "PK" = (
 /obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/iron/kitchen,
+/area/misc/hilbertshotel)
+"QC" = (
+/obj/machinery/light_switch/directional/south,
+/obj/structure/table,
+/obj/item/organ/heart,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "QJ" = (
 /obj/structure/table/wood/poker,
@@ -463,6 +588,10 @@
 "RP" = (
 /turf/open/floor/carpet,
 /area/misc/hilbertshotel)
+"Ss" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 "SS" = (
 /turf/closed/indestructible/hoteldoor{
 	icon_state = "door_closed";
@@ -488,6 +617,7 @@
 	dir = 8
 	},
 /obj/machinery/light/small/directional/east,
+/obj/machinery/vending/wallmed/directional/south,
 /turf/open/floor/iron/freezer,
 /area/misc/hilbertshotel)
 "Ul" = (
@@ -509,6 +639,12 @@
 /obj/structure/decorative/shelf,
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/wood/tile,
+/area/misc/hilbertshotel)
+"VT" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Wh" = (
 /turf/open/floor/iron/freezer,
@@ -552,8 +688,22 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/misc/hilbertshotel)
+"ZO" = (
+/obj/structure/bed{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
+"ZZ" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plating,
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
+FN
+FN
+FN
+FN
 FN
 FN
 FN
@@ -574,6 +724,10 @@ FN
 FN
 oZ
 oZ
+oZ
+oZ
+oZ
+oZ
 aC
 oZ
 oZ
@@ -589,6 +743,10 @@ FN
 "}
 (3,1,1) = {"
 FN
+oZ
+oD
+Nm
+QC
 oZ
 pm
 WX
@@ -607,6 +765,10 @@ FN
 (4,1,1) = {"
 FN
 oZ
+Ss
+Lo
+VT
+oZ
 eO
 Mj
 DX
@@ -624,6 +786,10 @@ FN
 (5,1,1) = {"
 FN
 oZ
+NL
+NL
+mB
+zT
 wS
 Mj
 Mj
@@ -640,6 +806,10 @@ FN
 "}
 (6,1,1) = {"
 FN
+oZ
+ND
+cR
+pO
 oZ
 Je
 Mj
@@ -658,6 +828,10 @@ FN
 (7,1,1) = {"
 FN
 oZ
+NL
+cS
+ZZ
+oZ
 md
 Ix
 Mp
@@ -674,6 +848,10 @@ FN
 "}
 (8,1,1) = {"
 FN
+oZ
+Ee
+hv
+NL
 oZ
 xT
 xT
@@ -692,6 +870,10 @@ FN
 (9,1,1) = {"
 FN
 oZ
+oZ
+oZ
+oZ
+oZ
 AE
 ar
 BR
@@ -708,6 +890,10 @@ FN
 "}
 (10,1,1) = {"
 FN
+FN
+NH
+NH
+zR
 oZ
 UQ
 QJ
@@ -725,6 +911,10 @@ FN
 "}
 (11,1,1) = {"
 FN
+FN
+oZ
+oZ
+oZ
 oZ
 cD
 dT
@@ -742,6 +932,10 @@ FN
 "}
 (12,1,1) = {"
 FN
+FN
+oZ
+ZO
+gx
 oZ
 LC
 wu
@@ -749,8 +943,8 @@ wu
 RP
 RP
 WN
-aS
-aS
+WI
+vi
 xT
 Wt
 ik
@@ -759,14 +953,18 @@ FN
 "}
 (13,1,1) = {"
 FN
+FN
 oZ
+NL
+NL
+zT
 Gv
 RP
 bz
 Ib
 RP
-xT
-aS
+Bq
+WI
 aS
 xT
 fa
@@ -776,6 +974,10 @@ FN
 "}
 (14,1,1) = {"
 FN
+FN
+oZ
+bl
+ka
 oZ
 gQ
 uX
@@ -783,8 +985,8 @@ zA
 RM
 kW
 xT
-aS
-aS
+WI
+Oc
 xT
 RF
 ho
@@ -793,6 +995,10 @@ FN
 "}
 (15,1,1) = {"
 FN
+FN
+oZ
+oZ
+oZ
 oZ
 oZ
 aC
@@ -809,6 +1015,10 @@ oZ
 FN
 "}
 (16,1,1) = {"
+FN
+FN
+FN
+FN
 FN
 FN
 FN

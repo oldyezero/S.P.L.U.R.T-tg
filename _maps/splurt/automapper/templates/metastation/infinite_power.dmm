@@ -1,0 +1,213 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/r_wall,
+/area/station/maintenance/starboard/fore)
+"d" = (
+/obj/structure/cable,
+/turf/closed/wall/r_wall,
+/area/station/maintenance/starboard/fore)
+"g" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"i" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
+/area/station/engineering/main)
+"k" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"l" = (
+/obj/machinery/status_display/evac/directional/north,
+/obj/machinery/camera/directional/north{
+	c_tag = "Engineering - Power Monitoring"
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/power/terminal,
+/obj/structure/cable,
+/obj/machinery/power/rtg/debug{
+	power_gen = 1000000
+	},
+/turf/open/floor/iron/dark,
+/area/station/engineering/main)
+"m" = (
+/obj/structure/cable,
+/obj/machinery/power/smes/engineering,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
+/area/station/engineering/main)
+"n" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Power Monitoring"
+	},
+/obj/effect/turf_decal/bot{
+	dir = 1
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"o" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/engineering/main)
+"q" = (
+/obj/machinery/light_switch/directional/west,
+/obj/machinery/modular_computer/preset/engineering{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"s" = (
+/obj/item/kirbyplants/random,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"t" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"u" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"w" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/power/terminal,
+/obj/structure/cable,
+/obj/machinery/power/rtg/debug{
+	power_gen = 1000000
+	},
+/turf/open/floor/iron/dark,
+/area/station/engineering/main)
+"B" = (
+/obj/machinery/light/directional/west,
+/obj/structure/sign/warning/electric_shock{
+	pixel_x = -31
+	},
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
+/area/station/engineering/main)
+"G" = (
+/obj/machinery/computer/atmos_alert/station_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"H" = (
+/obj/structure/cable,
+/obj/machinery/computer/station_alert/station_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"K" = (
+/obj/machinery/firealarm/directional/west,
+/obj/structure/cable,
+/obj/machinery/incident_display/delam/directional/north,
+/obj/machinery/power/terminal,
+/obj/machinery/power/rtg/debug{
+	power_gen = 1000000
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
+/area/station/engineering/main)
+"L" = (
+/obj/machinery/vending/wardrobe/engi_wardrobe,
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"O" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"P" = (
+/turf/closed/wall/r_wall,
+/area/station/engineering/main)
+"V" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/engineering/main)
+"W" = (
+/obj/structure/extinguisher_cabinet/directional/west,
+/obj/effect/landmark/start/station_engineer,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
+
+(1,1,1) = {"
+a
+a
+d
+a
+a
+a
+"}
+(2,1,1) = {"
+P
+K
+B
+W
+q
+P
+"}
+(3,1,1) = {"
+P
+w
+i
+g
+G
+P
+"}
+(4,1,1) = {"
+P
+l
+m
+t
+H
+P
+"}
+(5,1,1) = {"
+P
+V
+o
+n
+V
+P
+"}
+(6,1,1) = {"
+P
+L
+O
+u
+k
+s
+"}
