@@ -1,5 +1,5 @@
-<!-- Most valid html will work in here, but you have to use URL links for images. -->
+<!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Space Station 13!</h1>
+<h1><b>LOLASTATION!!!!!!</b></h1>
 
-<i>This server is running a /tg/station 13 Git build.</i>
+<h3><i>FEATURING:</i> <font style="color:#FF8CF7";>Claire my Belovedest</font></h3>
