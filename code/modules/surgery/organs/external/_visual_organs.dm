@@ -7,8 +7,6 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	///The overlay datum that actually draws stuff on the limb
 	var/datum/bodypart_overlay/mutant/bodypart_overlay
 
-	/// The savefile_key of the preference this relates to. Used for the preferences UI.
-	var/preference
 	///With what DNA block do we mutate in mutate_feature() ? For genetics
 	var/datum/dna_block/dna_block
 
@@ -66,6 +64,12 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 
 	if(target.dna.features[feature_key] != SPRITE_ACCESSORY_NONE)
 		return TRUE
+
+	// BUBBER EDIT ADDITION BEGIN - Customization
+	if(target.dna.mutant_bodyparts[feature_key] && target.dna.mutant_bodyparts[feature_key][MUTANT_INDEX_NAME] != SPRITE_ACCESSORY_NONE)
+		return TRUE
+	// BUBBER EDIT ADDITION END
+
 	return FALSE
 
 ///Update our features after something changed our appearance
@@ -109,7 +113,6 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_HORNS
 
-	preference = "feature_lizard_horns"
 	//dna_block = /datum/dna_block/feature/horn // SKYRAT EDIT REMOVAL - Customization - We have our own system to handle DNA.
 	restyle_flags = EXTERNAL_RESTYLE_ENAMEL
 
@@ -123,12 +126,7 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	dyable = TRUE
 
 /datum/bodypart_overlay/mutant/horns/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR))
-		return FALSE
-	return TRUE
+	return !(bodypart_owner.owner?.obscured_slots & HIDEHAIR)
 
 /datum/bodypart_overlay/mutant/horns/get_global_feature_list()
 	return SSaccessories.sprite_accessories["horns"] // SKYRAT EDIT - Customization - ORIGINAL: return SSaccessories.horns_list
@@ -142,7 +140,6 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_FRILLS
 
-	preference = "feature_lizard_frills"
 	//dna_block = /datum/dna_block/feature/frill // SKYRAT EDIT REMOVAL - Customization - We have our own system to handle DNA.
 	restyle_flags = EXTERNAL_RESTYLE_FLESH
 
@@ -155,12 +152,7 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	feature_key = FEATURE_FRILLS
 
 /datum/bodypart_overlay/mutant/frills/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if(!(human.head?.flags_inv & HIDEEARS))
-		return TRUE
-	return FALSE
+	return !(bodypart_owner.owner?.obscured_slots & HIDEEARS)
 
 /datum/bodypart_overlay/mutant/frills/get_global_feature_list()
 	return SSaccessories.sprite_accessories["frills"] // SKYRAT EDIT - Customization - ORIGINAL: return SSaccessories.frills_list
@@ -174,7 +166,6 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_SNOUT
 
-	preference = "feature_lizard_snout"
 	external_bodyshapes = BODYSHAPE_SNOUTED
 
 	//dna_block = /datum/dna_block/feature/snout // SKYRAT EDIT REMOVAL - Customization - We have our own system to handle DNA.
@@ -189,12 +180,7 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	feature_key = FEATURE_SNOUT
 
 /datum/bodypart_overlay/mutant/snout/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if((human.head?.flags_inv & HIDESNOUT) || (human.wear_mask?.flags_inv & HIDESNOUT))
-		return FALSE
-	return TRUE
+	return !(bodypart_owner.owner?.obscured_slots & HIDESNOUT)
 
 /datum/bodypart_overlay/mutant/snout/get_global_feature_list()
 	return SSaccessories.sprite_accessories["snout"] // SKYRAT EDIT - Customization - ORIGINAL : return SSaccessories.snouts_list
@@ -208,7 +194,6 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_ANTENNAE
 
-	preference = "feature_moth_antennae"
 	//dna_block = /datum/dna_block/feature/moth_antenna // SKYRAT EDIT REMOVAL - Customization - We have our own system to handle DNA.
 	restyle_flags = EXTERNAL_RESTYLE_FLESH
 
@@ -287,12 +272,7 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	if(!.)
 		return
 	// BUBBER EDIT ADDITION END: Customization
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if(!(human.head?.flags_inv & HIDEANTENNAE))
-		return TRUE
-	return FALSE
+	return !(bodypart_owner.owner?.obscured_slots & HIDEANTENNAE)
 
 ///The leafy hair of a podperson
 /obj/item/organ/pod_hair
@@ -302,7 +282,6 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_POD_HAIR
 
-	preference = "feature_pod_hair"
 	use_mob_sprite_as_obj_sprite = TRUE
 
 	//dna_block = /datum/dna_block/feature/pod_hair // BUBBER EDIT REMOVAL - We have our own system for handling DNA
@@ -338,9 +317,4 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 		overlay.color = null
 
 /datum/bodypart_overlay/mutant/pod_hair/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR))
-		return FALSE
-	return TRUE
+	return !(bodypart_owner.owner?.obscured_slots & HIDEHAIR)

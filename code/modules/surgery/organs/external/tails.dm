@@ -158,16 +158,10 @@
 // SKYRAT EDIT ADDITION END
 
 /datum/bodypart_overlay/mutant/tail/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if(human.wear_suit?.flags_inv & HIDEJUMPSUIT)
-		return FALSE
-	return TRUE
+	return !(bodypart_owner.owner?.obscured_slots & HIDEJUMPSUIT)
 
 /obj/item/organ/tail/cat
 	name = "tail"
-	preference = "feature_human_tail"
 
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/cat
 	restyle_flags = EXTERNAL_RESTYLE_FLESH
@@ -182,7 +176,7 @@
 
 ///Cat tail bodypart overlay
 /datum/bodypart_overlay/mutant/tail/cat
-	feature_key = FEATURE_TAIL_GENERIC // BUBBER EDIT CHANGE - Customization - ORIGINAL: feature_key = FEATURE_TAIL
+	feature_key = FEATURE_TAIL_GENERIC // BUBBER EDIT CHANGE - Customization - ORIGINAL: feature_key = FEATURE_TAIL_CAT
 	// color_source = ORGAN_COLOR_HAIR // SKYRAT EDIT REMOVAL
 
 /datum/bodypart_overlay/mutant/tail/cat/get_global_feature_list()
@@ -190,7 +184,6 @@
 
 /obj/item/organ/tail/monkey
 	name = "monkey tail"
-	preference = "feature_monkey_tail"
 	icon_state = "severedmonkeytail"
 	dna_block = null
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/monkey
@@ -262,7 +255,6 @@
 /obj/item/organ/tail/lizard
 	name = "lizard tail"
 	desc = "A severed lizard tail. Somewhere, no doubt, a lizard hater is very pleased with themselves."
-	preference = "feature_lizard_tail"
 
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/lizard
 
@@ -296,12 +288,7 @@
 	return (!isnull(tail_spine_key) ? "[tail_spine_key]_" : "") + (wagging ? "wagging_" : "") + sprite_datum.icon_state // Select the wagging state if appropriate
 
 /datum/bodypart_overlay/mutant/tail_spines/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
-	var/mob/living/carbon/human/human = bodypart_owner.owner
-	if(!istype(human))
-		return TRUE
-	if(human.wear_suit?.flags_inv & HIDEJUMPSUIT)
-		return FALSE
-	return TRUE
+	return !(bodypart_owner.owner?.obscured_slots & HIDEJUMPSUIT)
 
 /datum/bodypart_overlay/mutant/tail_spines/set_dye_color(new_color, obj/item/organ/organ)
 	dye_color = new_color //no update_body_parts() call, tail/set_dye_color will do it.
