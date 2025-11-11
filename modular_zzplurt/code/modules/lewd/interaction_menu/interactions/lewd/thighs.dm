@@ -149,6 +149,7 @@
 /datum/interaction/thigh_hump
 	name = "Hump Thighs"
 	description = "Hump their thighs."
+	interaction_requires = list(INTERACTION_REQUIRE_SELF_HUMAN)
 	message = list(
 		"humps %TARGET%'s thighs",
 		"grinds on %TARGET%'s legs",
