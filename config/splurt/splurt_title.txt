@@ -368,7 +368,7 @@
 					logoContainer.className = 'container_logo';
 					const logoImg = document.createElement('img');
 					logoImg.className = 'logo_image';
-					logoImg.src = 'https://i.ibb.co/FLcjXLfL/splurtlogo.png';
+					logoImg.src = 'https://i.ibb.co/Q3CtJy8R/lolalogo.png';
 					logoImg.alt = 'SPLURT Title Logo';
 					logoContainer.appendChild(logoImg);
 					document.body.appendChild(logoContainer);
