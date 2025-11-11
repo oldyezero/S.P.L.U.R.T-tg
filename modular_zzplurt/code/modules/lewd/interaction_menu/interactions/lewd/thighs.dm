@@ -145,3 +145,29 @@
 	target_pleasure = 4
 	user_arousal = 4
 	target_arousal = 6
+
+/datum/interaction/thigh_hump
+	name = "Hump Thighs"
+	description = "Hump their thighs."
+	message = list(
+		"humps %TARGET%'s thighs",
+		"grinds on %TARGET%'s legs",
+		"rubs themselves against %TARGET%'s legs"
+	)
+	user_messages = list(
+		"You feel %TARGET%'s warm thighs against you",
+		"The warmth of %TARGET%'s legs feels amazing",
+		"%TARGET%'s soft thighs feel great against you"
+	)
+	target_messages = list(
+		"You feel %USER% grinding against your thighs",
+		"%USER%'s shaft rubs against your legs",
+		"The warmth of %USER% presses against your thighs"
+	)
+	sound_range = 1
+	sound_use = TRUE
+	sound_possible = list('sound/items/weapons/thudswoosh.ogg')
+	user_pleasure = 0
+	target_pleasure = 0
+	user_arousal = 6
+	target_arousal = 4

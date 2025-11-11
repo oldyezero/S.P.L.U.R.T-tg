@@ -126,3 +126,23 @@
 	target_pleasure = 3
 	user_arousal = 3
 	target_arousal = 5
+
+/datum/interaction/lewd/bite
+	name = "Bite"
+	description = "Bite them."
+	interaction_requires = list(INTERACTION_REQUIRE_SELF_MOUTH)
+	message = list(
+		"bites %TARGET%.",
+		"chomps %TARGET%.",
+		"bites %TARGET%'s shoulder.",
+		"bites %TARGET%'s neck."
+	)
+	sound_possible = list(
+		'sound/items/weapons/bite.ogg'
+	)
+	sound_range = 1
+	sound_use = TRUE
+	user_pleasure = 0
+	target_pleasure = 0
+	user_arousal = 1
+	target_arousal = 3
