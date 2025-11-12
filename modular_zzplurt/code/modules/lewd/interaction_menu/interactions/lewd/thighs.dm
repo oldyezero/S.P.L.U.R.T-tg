@@ -146,10 +146,10 @@
 	user_arousal = 4
 	target_arousal = 6
 
-/datum/interaction/thigh_hump
+/datum/interaction/lewd/thighhump
 	name = "Hump Thighs"
 	description = "Hump their thighs."
-	interaction_requires = list(INTERACTION_REQUIRE_SELF_HUMAN)
+	interaction_requires = list(INTERACTION_REQUIRE_SELF_HAND)
 	message = list(
 		"humps %TARGET%'s thighs",
 		"grinds on %TARGET%'s legs",
@@ -165,10 +165,12 @@
 		"%USER%'s shaft rubs against your legs",
 		"The warmth of %USER% presses against your thighs"
 	)
+	sound_possible = list(
+		'sound/items/weapons/thudswoosh.ogg'
+	)
 	sound_range = 1
 	sound_use = TRUE
-	sound_possible = list('sound/items/weapons/thudswoosh.ogg')
-	user_pleasure = 0
+	user_pleasure = 2
 	target_pleasure = 0
 	user_arousal = 6
 	target_arousal = 4
