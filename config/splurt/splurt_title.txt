@@ -98,7 +98,7 @@
 			.progress_bar {
 				width: 0%;
 				height: 100%;
-				background-image: url('https://i.ibb.co/k2zd4kRd/com-speed.gif');
+				background-image: url('https://i.ibb.co/W4p1bGSc/com-speed.gif');
 				background-position: center right;
 				background-color: #000000;
 			}
