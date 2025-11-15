@@ -753,6 +753,7 @@
 	inhand_icon_state = "blahaj"
 	attack_verb_continuous = list("gnaws", "gnashes", "chews")
 	attack_verb_simple = list("gnaw", "gnash", "chew")
+	squeak_override = list('modular_zzplurt/sound/voice/rawr.ogg'=1)
 
 /obj/item/toy/plush/donkpocket
 	name = "donk pocket plushie"
