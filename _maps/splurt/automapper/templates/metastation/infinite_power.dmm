@@ -114,11 +114,11 @@
 /area/station/engineering/main)
 "H" = (
 /obj/structure/cable,
-/obj/machinery/computer/station_alert/station_only{
-	dir = 1
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
+	},
+/obj/machinery/computer/station_alert{
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
