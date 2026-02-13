@@ -129,7 +129,7 @@ GLOBAL_LIST_EMPTY(req_console_ckey_departments)
 		LAZYADD(GLOB.reta_consoles_by_origin[dept_key], src)
 
 	if(mapload)
-		find_and_hang_on_wall()
+		find_and_mount_on_atom()
 
 /obj/machinery/requests_console/Destroy()
 	QDEL_LIST(messages)
@@ -260,6 +260,8 @@ GLOBAL_LIST_EMPTY(req_console_ckey_departments)
 						target_channels += RADIO_CHANNEL_SERVICE
 					if("Command")
 						target_channels += RADIO_CHANNEL_COMMAND
+					if("Affairs") // SPLURT ADDITION
+						target_channels += RADIO_CHANNEL_IAA
 					if("Cargo")
 						target_channels += RADIO_CHANNEL_SUPPLY
 					if("Mining")

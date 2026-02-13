@@ -482,6 +482,9 @@
 	else if (siemens_coefficient <= 0.5)
 		.["partially insulated"] = "It is made from a poor insulator that will dampen (but not fully block) electric shocks passing through it."
 
+	if(LAZYLEN(unique_reskin) && !current_skin)
+		.["reskinnable"] = "This item is able to be reskinned! Alt-Click to do so!"
+
 /obj/item/examine_descriptor(mob/user)
 	return "item"
 
@@ -996,7 +999,7 @@
 
 /obj/item/proc/update_slot_icon()
 	SIGNAL_HANDLER
-	if(!ismob(loc))
+	if(!ismob(loc) || QDELETED(loc))
 		return
 	var/mob/owner = loc
 	owner.update_clothing(slot_flags | owner.get_slot_by_item(src))
@@ -1236,9 +1239,13 @@
 			if("operative")
 				outline_color = COLOR_THEME_OPERATIVE
 			if("clockwork")
-				outline_color = COLOR_THEME_CLOCKWORK //if you want free gbp go fix the fact that clockwork's tooltip css is glass'
+				outline_color = COLOR_THEME_CLOCKWORK
 			if("glass")
 				outline_color = COLOR_THEME_GLASS
+			if("trasen-knox")
+				outline_color = COLOR_THEME_TRASENKNOX
+			if("detective")
+				outline_color = COLOR_THEME_DETECTIVE
 			else //this should never happen, hopefully
 				outline_color = COLOR_WHITE
 	if(color)
@@ -1376,11 +1383,23 @@
 
 /obj/item/proc/canStrip(mob/stripper, mob/owner)
 	SHOULD_BE_PURE(TRUE)
+	//SPLURT ADDITION START
+	if(HAS_TRAIT_FROM(src, TRAIT_NODROP, "mkultra_slot_lock"))
+		return stripper && owner && stripper != owner && !(item_flags & ABSTRACT)
+	//SPLURT ADDITION END
 	return !HAS_TRAIT(src, TRAIT_NODROP) && !(item_flags & ABSTRACT)
 
 /obj/item/proc/doStrip(mob/stripper, mob/owner)
 	//SKYRAT EDIT CHANGE BEGIN - THIEVING GLOVES - ORIGINAL: return owner.dropItemToGround(src)
-	if (!owner.dropItemToGround(src))
+	//SPLURT REMOVAL - ORIGINAL: if (!owner.dropItemToGround(src))
+	//SPLURT ADDITION START
+	if(HAS_TRAIT_FROM(src, TRAIT_NODROP, "mkultra_slot_lock"))
+		if(!stripper || !owner || stripper == owner)
+			return FALSE
+		if (!owner.dropItemToGround(src, force = TRUE))
+			return FALSE
+	else if (!owner.dropItemToGround(src))
+	//SPLURT ADDITION END
 		return FALSE
 	if (HAS_TRAIT(stripper, TRAIT_STICKY_FINGERS))
 		stripper.put_in_hands(src)
@@ -2254,3 +2273,11 @@
 		target_limb = victim.get_bodypart(target_limb) || victim.bodyparts[1]
 
 	return get_embed()?.embed_into(victim, target_limb)
+
+/// Checks if user can insert a valid container into the chemistry machine.
+/obj/item/proc/can_insert_container(mob/living/user, obj/machinery/chem_machine)
+	return is_chem_container() && chem_machine.can_interact(user) && user.can_perform_action(chem_machine, ALLOW_SILICON_REACH | FORBID_TELEKINESIS_REACH)
+
+/// Checks if this container is valid for use with chemistry machinery.
+/obj/item/proc/is_chem_container()
+	return FALSE
