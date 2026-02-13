@@ -11,13 +11,15 @@
 /datum/storage/pockets/small/collar/New()
 	. = ..()
 	can_hold = typecacheof(list(
-	/obj/item/food/cookie))
+	/obj/item/food/cookie,
+	/obj/item/condom_pack))
 
 /datum/storage/pockets/small/collar/locked/New()
 	. = ..()
 	can_hold = typecacheof(list(
 	/obj/item/food/cookie,
-	/obj/item/key/collar))
+	/obj/item/key/collar,
+	/obj/item/condom_pack))
 
 /obj/item/clothing/neck/human_petcollar
 	name = "pet collar"
