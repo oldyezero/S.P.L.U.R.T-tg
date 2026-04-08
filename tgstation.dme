@@ -10644,4 +10644,4 @@
 #include "modular_zzplurt\modules\primitive_production\code\primitive.dm"
 #include "modular_zzplurt\modules\synthx\code\bodyparts\internal_computer\internal_computer.dm"
 // END_INCLUDE
-#include "modular_lolastation\code\game\turfs\closed\~wall_texture_override.dm"
+#include "modular_lolastation\code\game\turfs\closed\maz_walls.dm"
